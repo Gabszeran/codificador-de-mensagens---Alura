@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de mensagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="assets/logo.png" alt="Logo da Alura" class="cabecalho_logo">
+    </header>
+
+    <main class="container">
+
+        <section class="entrada-texto">
+            <textarea class="entrada-texto__texto" placeholder="Digite seu texto"></textarea>
+            <div class="entrada-texto__info">
+                <i class="fa-solid fa-circle-info fa-lg" style="color: #495057;"></i><p class="entrada-texto__info__aviso">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <section class="entrada-texto__botoes">
+                <button class="entrada-texto__botoes__criptografar">Criptografar</button>
+                <button class="entrada-texto__botoes__descriptografar">Descriptografar</button>
+            </section>
+        </section>
+
+        <section class="saida-texto">
+            <p class="saida-texto__resultado oculto"></p>
+            <button class="saida-texto__copiar oculto">Copiar</button>
+
+            <img class="saida-texto__ilustracao" src="assets/figure.svg" alt="Ilustração de uma pessoa procurando algo">
+            <h2 class="saida-texto__mensagem">Nenhuma mensagem encontrada</h2>
+            <p class="saida-texto__mensagem__orientacao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Maria Gabriela Cardoso</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html> 
